@@ -2,13 +2,13 @@
 @font-face { font-family: futura; src: url(../font/futura.ttf) format(truetype); }
 @font-face { font-family: justsans; src: url(../font/justSans.woff) format(truetype); }
 
-p { font: 22px justsans; color:#1c1c1c; margin: 40px 160px; text-align: justify; line-height: 1.5; }
+p { font: 22px justsans; color:#1c1c1c; margin: 40px 160px; text-align: justify; line-height: 1.5; transition: color .4s; }
 
-h2 { font: 40px justsans; margin: 80px 160px; color:#1c1c1c; }
+h2 { font: 40px justsans; margin: 80px 160px; color:#1c1c1c; transition: color .4s; }
 
 li { float: left; list-style-type: none; margin: 30px 10px 0; }
 
-a { transition: color .2s; text-decoration: none; }
+a { text-decoration: none; }
 
 .backImg { position: fixed; width: 104%; height: 115%; object-fit: cover; z-index: -1; will-change: transform; }
 
@@ -18,14 +18,21 @@ a { transition: color .2s; text-decoration: none; }
 .txtNavbar { color:#FFF; font: 18px justsans; margin: 35px; }
 .txtNavbar.scrolled { color:#1c1c1c; }
 
-.toggle-theme { position: absolute; top: 36%; right: 40px; cursor: pointer; color: #FFF; width: 32px; height: 32px; }
+.toggle-theme { position: absolute; top: 36%; right: 40px; cursor: pointer; color:#FFF; width: 32px; height: 32px; }
 .theme-icon { position: absolute; font-size: 24px; transition: opacity .5s, transform .5s; }
 
-.box { margin: 0 -15px 0 160px; width: 400px; height: 200px; border-radius: 30px; overflow: hidden; display: inline-block; position: relative; box-shadow: 0 0 20px rgba(0, 0, 0, .3); }
+main { background: #FFF; padding-bottom: 80px; transition: background-color .4s;}
+footer { background:#000;padding:40px 20px 30px; }
+
+.box { margin: 0 -15px 0 160px; width: 400px; height: 200px; border-radius: 40px; overflow: hidden; display: inline-block; position: relative; border: 2px solid #d4d4d4; }
 .box img { width: 100%; height: 100%; object-fit: cover; }
 .box p { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); margin: 0; color: #FFF; }
 
 .icon { color:#FFF; font-size: 32px; padding: 8px; }
+
+body.dark p, body.dark h2, body.dark .txtNavbar.scrolled { color:#FFF; }
+body.dark main, body.dark #navbar.scrolled { background:#000; }
+body.dark h1, body.dark header div, body.dark #navbar { color:#000; }
 
 @media(max-width: 768px) {
     .backImg { width: 114%; }

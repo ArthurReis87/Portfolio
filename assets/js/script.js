@@ -1,4 +1,4 @@
-// imagem arthur responsividade
+// imagem de fundo responsividade
 addEventListener('scroll', () => {
     const scrolled = scrollY, bg = document.querySelector('.backImg');
     bg.style.transform = `translateY(${scrolled * -0.3}px)`;
@@ -14,12 +14,16 @@ const navbar = document.getElementById('navbar'), all = document.querySelectorAl
 addEventListener('scroll', () => {
   navbar.style.top = ((currentY = scrollY) < lastY && navbar.getBoundingClientRect().top < 90) ? '0' : '-90px';
   
-  all.forEach(el => el.classList.toggle('scrolled', currentY > 90));
+  all.forEach(element => element.classList.toggle('scrolled', currentY > 90));
 
   lastY = currentY;
 });
 
 // ícone tema
+const toggleTheme = () => {
+  document.body.classList.toggle('dark');
+};
+
 document.addEventListener('DOMContentLoaded', () => {
   const toggle = document.createElement('div');
   toggle.className = 'toggle-theme';
@@ -42,14 +46,17 @@ document.addEventListener('DOMContentLoaded', () => {
       sun.style.transform = 'scale(.3) rotate(45deg)';
       moon.style.opacity = '1';
       moon.style.transform = 'scale(1) rotate(-15deg)';
+      toggleTheme()
     } else {
       sun.style.opacity = '1';
       sun.style.transform = 'scale(1) rotate(0deg)';
       moon.style.opacity = '0';
       moon.style.transform = 'scale(.3) rotate(-90deg)';
+      toggleTheme()
     }
   });
 
+  // troca a cor do ícone dependendo da classe atual da navbar
   addEventListener('scroll', () => {
     const scrolled = navbar.classList.contains('scrolled');
     toggle.style.color = scrolled ? '#1c1c1c' : '#FFF';
