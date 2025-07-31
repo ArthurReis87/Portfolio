@@ -1,13 +1,4 @@
-// imagem de fundo responsividade
-addEventListener('scroll', () => {
-  const scrolled = scrollY, bg = document.querySelector('.backImg');
-  bg.style.transform = `translateY(${scrolled * -0.3}px)`;
-});
-
-// projetos responsividade
-
-
-// navbar
+// ------------------------ Navbar
 let lastY = scrollY;
 const navbar = document.getElementById('navbar'), all = document.querySelectorAll('.txtNavbar, #navbar');
 
@@ -19,7 +10,7 @@ addEventListener('scroll', () => {
   lastY = currentY;
 });
 
-// ícone tema
+// ------------------------ Ícone tema
 document.addEventListener('DOMContentLoaded', () => {
   const navbar = document.getElementById('navbar'), themeToggle = createThemeToggle();
   navbar.appendChild(themeToggle);
@@ -31,10 +22,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Atualiza aparência do botão conforme scroll e tema
   const updateThemeButton = () => {
-    const isScrolled = navbar.classList.contains('scrolled');
     const isDarkMode = document.body.classList.contains('dark');
-    
-    themeToggle.style.color = (isScrolled && !isDarkMode) ? '#1c1c1c' : '#FFF';
+    themeToggle.style.color = isDarkMode ? '#FFF' : '#000';
   };
 
   // Alterna tema e anima ícones
@@ -59,6 +48,6 @@ document.addEventListener('DOMContentLoaded', () => {
     return toggleElement;
   }
 
-  window.addEventListener('scroll', updateThemeButton);
+  addEventListener('scroll', updateThemeButton);
   updateThemeButton();
 });
