@@ -32,10 +32,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const isDarkMode = document.body.classList.contains('dark');
 
     sunIcon.style.opacity = isDarkMode ? '0' : '1';
-    sunIcon.style.transform = isDarkMode ? 'scale(.3) rotate(45deg)' : 'scale(1) rotate(0deg)';
+    sunIcon.style.transform = isDarkMode ? 'scale(0) rotate(90deg)' : 'scale(1) rotate(-15deg)';
 
     moonIcon.style.opacity = isDarkMode ? '1' : '0';
-    moonIcon.style.transform = isDarkMode ? 'scale(1) rotate(-15deg)' : 'scale(.3) rotate(-90deg)';
+    moonIcon.style.transform = isDarkMode ? 'scale(1) rotate(-15deg)' : 'scale(0) rotate(-180deg)';
 
     updateThemeButton();
   });
