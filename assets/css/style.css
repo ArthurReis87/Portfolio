@@ -5,6 +5,7 @@
 * { transition: color .4s, background-color .4s; }
 
 a { text-decoration: none; }
+
 li { float: left; list-style-type: none; margin: 30px 10px 0; }
 
 #navbar { top: -90px; height: 90px; position: sticky; transition: top .2s, background-color .4s; z-index: 10; }
@@ -15,7 +16,9 @@ li { float: left; list-style-type: none; margin: 30px 10px 0; }
 .toggle-theme { position: absolute; top: 36%; right: 40px; cursor: pointer; color: #FFF; width: 32px; height: 32px; }
 .theme-icon { position: absolute; font-size: 24px; transition: opacity .5s, transform .5s; }
 
-#backImg { position: fixed; width: 100%; z-index: -1; transition: filter .4s; }
+.backImg { position: fixed; width: 100vw; height: 100vh; object-fit: cover; z-index: -1; transition: filter .4s; }
+#backImgLight { opacity: 1; }
+#backImgDark { opacity: 0; }
 
 h1 { color: #000; font: normal 5.5em futura; text-align: center; }
 header p { color: #000; font: 20px futura; margin-top: -55px; text-align: center; }
@@ -44,7 +47,8 @@ footer p { color: #62748E; font-size: 16px; margin: 0 135px 0 0; }
 
 body.dark :is(h1, h2, p, header p, .txtNavbar.scrolled, .txtNavbar, .icon) { color: #E5E5E5; }
 body.dark #navbar.scrolled { background: rgba(0, 0, 0, .4); }
-body.dark #backImg { filter: invert(1); }
+body.dark #backImgLight { opacity: 0; }
+body.dark #backImgDark { opacity: 1; }
 body.dark main { background: #262626; }
 body.dark footer { background: #0A0A0A; }
 body.dark footer p { color: #ABABAB; }
