@@ -1,5 +1,4 @@
 @charset "UTF-8";
-@font-face { font-family: futura; src: url(../font/futura.ttf) format(truetype); }
 @font-face { font-family: justsans; src: url(../font/justSans.woff) format(truetype); }
 
 * { transition: color .4s, background-color .4s; }
@@ -10,46 +9,52 @@ li { float: left; list-style-type: none; margin: 30px 10px 0; }
 
 #navbar { top: -90px; height: 90px; position: sticky; transition: top .2s, background-color .4s; z-index: 10; }
 #navbar.scrolled { background-color: rgba(255, 255, 255, .4); backdrop-filter: blur(10px); }
-.txtNavbar { color: #1c1c1c; font: 18px justsans; margin: 35px; }
-.txtNavbar.scrolled { color: #1c1c1c; }
+.txtNavbar { color: #0A0A0A; font: 18px justsans; margin: 35px; }
+.txtNavbar.scrolled { color: #0A0A0A; }
 
-.toggle-theme { position: absolute; top: 36%; right: 40px; cursor: pointer; color: #FFF; width: 32px; height: 32px; }
+.toggle-theme { color: #FFF; position: absolute; top: 36%; right: 40px; cursor: pointer; width: 32px; height: 32px; }
 .theme-icon { position: absolute; font-size: 24px; transition: opacity .5s, transform .5s; }
 
-.backImg { position: fixed; width: 100vw; height: 100vh; object-fit: cover; z-index: -1; transition: filter .4s; }
+.backImg { background: #000; position: fixed; width: 100vw; height: 100vh; z-index: -1; transition: opacity .4s; }
 #backImgLight { opacity: 1; }
 #backImgDark { opacity: 0; }
 
-h1 { color: #000; font: normal 5.5em futura; text-align: center; }
-header p { color: #000; font: 20px futura; margin-top: -55px; text-align: center; }
+h1 { color: #000; font: normal 5.5em justsans; text-align: center; }
+header p { color: #000; font: 20px justsans; margin-top: -55px; text-align: center; }
 
-p { font: 22px justsans; color: #62748E; margin: 40px 160px; text-align: justify; line-height: 1.5; }
+p { color: #62748E; font: 22px justsans; margin: 40px 160px; text-align: justify; line-height: 1.5; }
 
-h2 { font: 40px justsans; margin: 80px 160px; color: #000; text-align: center; }
+h2 { color: #000; font: 40px justsans; text-align: center; }
+
+h3 { color: #000; font: 26px justsans; margin: 30px 0 -20px 30px; }
 
 main { background: #F4F4F4; padding-bottom: 80px; }
 
+.boxes { display: flex; justify-content: center; gap: 90px; padding-top: 40px; }
+.boxWrapper { background: #FFF; display: flex; flex-direction: column; width: 450px; border-radius: 30px; }
+.boxWrapper p { margin: 20px 0 0; text-align: justify; padding: 30px; }
 .box {
+  height: 220px;
   overflow: hidden;
   position: relative;
+  border-radius: 30px;
   display: inline-block;
-  width: 400px; height: 200px;
+  border: 1.8px solid transparent;
   box-shadow: 0 0 3px rgba(0, 0, 0, .3);
-  border: 1.8px solid transparent; border-radius: 30px;
   background: linear-gradient(145deg, #d4d4d4, #FFF, #a8a8a8) border-box, transparent padding-box;
 }
 .box img { width: 100%; height: 100%; object-fit: cover; }
-#boxes { display: flex; justify-content: center; flex-wrap: wrap; gap: 120px; margin: 0 5vw; padding-top: 40px; }
 
 footer { background: #FFF; padding: 40px 20px 30px; box-shadow: 5px 5px 10px 10px rgba(0, 0, 0, .015); }
 footer p { color: #62748E; font-size: 16px; margin: 0 135px 0 0; }
-.icon { color: #1c1c1c; font-size: 32px; padding: 10px; }
+.icon { color: #0A0A0A; font-size: 32px; padding: 10px; }
 
-body.dark :is(h1, h2, p, header p, .txtNavbar.scrolled, .txtNavbar, .icon) { color: #E5E5E5; }
+body.dark :is(h1, h2, h3, p, .txtNavbar.scrolled, .txtNavbar, .icon) { color: #E5E5E5; }
 body.dark #navbar.scrolled { background: rgba(0, 0, 0, .4); }
 body.dark #backImgLight { opacity: 0; }
 body.dark #backImgDark { opacity: 1; }
 body.dark main { background: #262626; }
+body.dark .boxWrapper { background: #171717; }
 body.dark footer { background: #0A0A0A; }
 body.dark footer p { color: #ABABAB; }
 

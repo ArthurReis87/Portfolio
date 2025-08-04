@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // Atualiza aparência do botão conforme scroll e tema
   const updateThemeButton = () => {
     const isDarkMode = document.body.classList.contains('dark');
-    themeToggle.style.color = isDarkMode ? '#FFF' : '#000';
+    themeToggle.style.color = isDarkMode ? '#FFF' : '#0A0A0A';
   };
 
   // Alterna tema e anima ícones
