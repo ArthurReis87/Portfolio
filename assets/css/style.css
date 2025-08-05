@@ -2,9 +2,7 @@
 @font-face { font-family: justsans; src: url(../font/justSans.woff) format(truetype); }
 
 * { transition: color .4s, background-color .4s; }
-
 a { text-decoration: none; }
-
 li { float: left; list-style-type: none; margin: 30px 10px 0; }
 
 #navbar { top: -90px; height: 90px; position: sticky; transition: top .2s, background-color .4s; z-index: 10; }
@@ -15,20 +13,57 @@ li { float: left; list-style-type: none; margin: 30px 10px 0; }
 .toggle-theme { color: #FFF; position: absolute; top: 36%; right: 40px; cursor: pointer; width: 32px; height: 32px; }
 .theme-icon { position: absolute; font-size: 24px; transition: opacity .5s, transform .5s; }
 
+.language-toggle {
+  top: 35.5%;
+  z-index: 20;
+  right: 110px;
+  cursor: pointer;
+  font-size: 24px;
+  color: #0A0A0A;
+  position: absolute;
+  transition: color .4s;
+}
+.language-menu {
+  right: 0;
+  top: 140%;
+  opacity: 0;
+  width: auto;
+  overflow: hidden;
+  position: absolute;
+  background: #FFF;
+  border-radius: 8px;
+  visibility: hidden;
+  min-width: max-content;
+  transform: translateY(-10px);
+  box-shadow: 0 2px 8px rgba(0,0,0,.2);
+  transition: opacity .2s, visibility .2s, transform .2s;
+}
+.language-menu button {
+  display: block;
+  width: 100%;
+  padding: 8px 16px;
+  background: none;
+  border: none;
+  text-align: left;
+  font: 16px justsans;
+  color: #0A0A0A;
+  cursor: pointer;
+  transition: background .2s;
+}
+.language-menu button:hover { background: rgba(0, 0, 0, .05); }
+.language-menu.open { opacity: 1; visibility: visible; transform: translateY(0); }
+
 .backImg { background: #000; position: fixed; width: 100vw; height: 100vh; z-index: -1; transition: opacity .4s; }
 #backImgLight { opacity: 1; }
 #backImgDark { opacity: 0; }
 
-h1 { color: #000; font: normal 5.5em justsans; text-align: center; }
+h1 { color: #000; font: normal 5em justsans; text-align: center; }
 header p { color: #000; font: 20px justsans; margin-top: -55px; text-align: center; }
 
-p { color: #62748E; font: 22px justsans; margin: 40px 160px; text-align: justify; line-height: 1.5; }
-
-h2 { color: #000; font: 40px justsans; text-align: center; }
-
-h3 { color: #000; font: 26px justsans; margin: 30px 0 -20px 30px; }
-
 main { background: #F4F4F4; padding-bottom: 80px; }
+p { color: #62748E; font: 22px justsans; margin: 40px 160px; text-align: justify; line-height: 1.5; }
+h2 { color: #000; font: 40px justsans; text-align: center; }
+h3 { color: #000; font: 26px justsans; margin: 30px 0 -20px 30px; }
 
 .boxes { display: flex; justify-content: center; gap: 90px; padding-top: 40px; }
 .boxWrapper { background: #FFF; display: flex; flex-direction: column; width: 450px; border-radius: 30px; }
@@ -49,12 +84,13 @@ footer { background: #FFF; padding: 40px 20px 30px; box-shadow: 5px 5px 10px 10p
 footer p { color: #62748E; font-size: 16px; margin: 0 135px 0 0; }
 .icon { color: #0A0A0A; font-size: 32px; padding: 10px; }
 
-body.dark :is(h1, h2, h3, p, .txtNavbar.scrolled, .txtNavbar, .icon) { color: #E5E5E5; }
+body.dark :is(h1, h2, h3, p, .txtNavbar.scrolled,.txtNavbar, .language-toggle, .language-menu button, .icon) { color: #E5E5E5; }
+body.dark :is(.boxWrapper, .language-menu) { background: #171717; }
 body.dark #navbar.scrolled { background: rgba(0, 0, 0, .4); }
+body.dark .language-menu button:hover { background: rgba(255, 255, 255, .1) }
 body.dark #backImgLight { opacity: 0; }
 body.dark #backImgDark { opacity: 1; }
 body.dark main { background: #262626; }
-body.dark .boxWrapper { background: #171717; }
 body.dark footer { background: #0A0A0A; }
 body.dark footer p { color: #ABABAB; }
 
