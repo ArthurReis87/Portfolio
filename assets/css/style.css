@@ -11,11 +11,11 @@ li { float: left; list-style-type: none; margin: 30px 10px 0; }
 .txtNavbar { color: #0A0A0A; font: 18px justsans; margin: 35px; }
 .txtNavbar.scrolled { color: #0A0A0A; }
 
-.toggle-theme { color: #FFF; position: absolute; top: 36%; right: 40px; cursor: pointer; width: 32px; height: 32px; }
-.theme-icon { position: absolute; font-size: 24px; transition: opacity .5s, transform .5s; }
+.toggleTheme { color: #FFF; position: absolute; top: 36%; right: 40px; cursor: pointer; width: 32px; height: 32px; }
+.themeIcon { position: absolute; font-size: 24px; transition: opacity .5s, transform .5s; }
 
-.language-toggle {
-  top: 35.5%;
+.languageToggle {
+  top: 35.45%;
   z-index: 20;
   right: 110px;
   cursor: pointer;
@@ -24,7 +24,7 @@ li { float: left; list-style-type: none; margin: 30px 10px 0; }
   position: absolute;
   transition: color .4s;
 }
-.language-menu {
+.languageMenu {
   right: 0;
   top: 140%;
   opacity: 0;
@@ -39,7 +39,7 @@ li { float: left; list-style-type: none; margin: 30px 10px 0; }
   box-shadow: 0 2px 8px rgba(0,0,0,.2);
   transition: opacity .2s, visibility .2s, transform .2s;
 }
-.language-menu button {
+.languageMenu button {
   display: block;
   width: 100%;
   padding: 8px 16px;
@@ -51,8 +51,8 @@ li { float: left; list-style-type: none; margin: 30px 10px 0; }
   cursor: pointer;
   transition: background .2s;
 }
-.language-menu button:hover { background: rgba(0, 0, 0, .05); }
-.language-menu.open { opacity: 1; visibility: visible; transform: translateY(0); }
+.languageMenu button:hover { background: rgba(0, 0, 0, .05); }
+.languageMenu.open { opacity: 1; visibility: visible; transform: translateY(0); }
 
 h1 { color: #0A0A0A; font: normal 5em justsans; text-align: center; }
 header p { color: #0A0A0A; font: 20px justsans; margin-top: -55px; text-align: center; }
@@ -81,13 +81,12 @@ footer { background: #FFF; padding: 40px 20px 30px; box-shadow: 5px 5px 10px 10p
 footer p { color: #62748E; font-size: 16px; margin: 0 135px 0 0; }
 .icon { color: #0A0A0A; font-size: 32px; padding: 10px; }
 
-body.dark :is(h1, h2, h3, p, .txtNavbar.scrolled,.txtNavbar, .language-toggle, .language-menu button, .icon) { color: #E5E5E5; }
-body.dark :is(.boxWrapper, .language-menu) { background: #171717; }
-body.dark :is(header, footer) { background: #0A0A0A; }
-body.dark {background: #0A0A0A; }
-body.dark main { background: #262626; }
+body.dark :is(.txtNavbar, .txtNavbar.scrolled, .languageToggle, .languageMenu button, h1, h2, h3, p, .icon) { color: #E5E5E5; }
+body.dark :is(.languageMenu, .boxWrapper) { background: #171717; }
 body.dark #navbar.scrolled { background: rgba(0, 0, 0, .4); }
-body.dark .language-menu button:hover { background: rgba(255, 255, 255, .1) }
+body.dark .languageMenu button:hover { background: rgba(255, 255, 255, .1) }
+body.dark, body.dark :is(header, footer) { background: #0A0A0A; }
+body.dark main { background: #262626; }
 body.dark footer p { color: #ABABAB; }
 
 @media(max-width: 768px) {
