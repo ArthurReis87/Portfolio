@@ -5,6 +5,12 @@
 a { text-decoration: none; }
 li { float: left; list-style-type: none; margin: 30px 10px 0; }
 :is(body, header) { background: #FFF; }
+h1 { color: #0A0A0A; font: normal 5em justsans; text-align: center; }
+header p { color: #0A0A0A; font: 20px justsans; margin-top: -55px; text-align: center; }
+main { background: #F4F4F4; padding-bottom: 80px; }
+p { color: #62748E; font: 22px justsans; margin: 40px 160px; text-align: justify; line-height: 1.5; }
+h2 { color: #0A0A0A; font: 40px justsans; text-align: center; }
+h3 { color: #0A0A0A; font: 26px justsans; margin: 30px 0 -20px 30px; }
 
 #navbar { top: -90px; height: 90px; position: sticky; transition: top .2s, background-color .4s; z-index: 10; }
 #navbar.scrolled { background-color: rgba(255, 255, 255, .4); backdrop-filter: blur(10px); }
@@ -14,16 +20,7 @@ li { float: left; list-style-type: none; margin: 30px 10px 0; }
 .toggleTheme { color: #FFF; position: absolute; top: 36%; right: 40px; cursor: pointer; width: 32px; height: 32px; }
 .themeIcon { position: absolute; font-size: 24px; transition: opacity .5s, transform .5s; }
 
-.languageToggle {
-  top: 35.45%;
-  z-index: 20;
-  right: 110px;
-  cursor: pointer;
-  font-size: 24px;
-  color: #0A0A0A;
-  position: absolute;
-  transition: color .4s;
-}
+.languageToggle { top: 35.45%; right: 110px; cursor: pointer; font-size: 24px; color: #0A0A0A; position: absolute; }
 .languageMenu {
   right: 0;
   top: 140%;
@@ -49,18 +46,9 @@ li { float: left; list-style-type: none; margin: 30px 10px 0; }
   font: 16px justsans;
   color: #0A0A0A;
   cursor: pointer;
-  transition: background .2s;
 }
 .languageMenu button:hover { background: rgba(0, 0, 0, .05); }
 .languageMenu.open { opacity: 1; visibility: visible; transform: translateY(0); }
-
-h1 { color: #0A0A0A; font: normal 5em justsans; text-align: center; }
-header p { color: #0A0A0A; font: 20px justsans; margin-top: -55px; text-align: center; }
-
-main { background: #F4F4F4; padding-bottom: 80px; }
-p { color: #62748E; font: 22px justsans; margin: 40px 160px; text-align: justify; line-height: 1.5; }
-h2 { color: #0A0A0A; font: 40px justsans; text-align: center; }
-h3 { color: #0A0A0A; font: 26px justsans; margin: 30px 0 -20px 30px; }
 
 .boxes { display: flex; justify-content: center; gap: 90px; padding-top: 40px; }
 .boxWrapper { background: #FFF; display: flex; flex-direction: column; width: 450px; border-radius: 30px; }
@@ -83,9 +71,9 @@ footer p { color: #62748E; font-size: 16px; margin: 0 135px 0 0; }
 
 body.dark :is(.txtNavbar, .txtNavbar.scrolled, .languageToggle, .languageMenu button, h1, h2, h3, p, .icon) { color: #E5E5E5; }
 body.dark :is(.languageMenu, .boxWrapper) { background: #171717; }
+body.dark, body.dark :is(header, footer) { background: #0A0A0A; }
 body.dark #navbar.scrolled { background: rgba(0, 0, 0, .4); }
 body.dark .languageMenu button:hover { background: rgba(255, 255, 255, .1) }
-body.dark, body.dark :is(header, footer) { background: #0A0A0A; }
 body.dark main { background: #262626; }
 body.dark footer p { color: #ABABAB; }
 

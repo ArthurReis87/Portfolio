@@ -1,13 +1,12 @@
 // ------------------------ Navbar
 let lastY = scrollY;
 const navbar = document.getElementById('navbar');
-const navElements = document.querySelectorAll('.txtNavbar, #navbar');
 
 addEventListener('scroll', () => {
-  const currentY = scrollY;
-  const shouldShow = currentY < lastY && navbar.getBoundingClientRect().top < 90;
-  navbar.style.top = shouldShow ? '0' : '-90px';
-  navElements.forEach(el => el.classList.toggle('scrolled', currentY > 90));
+  navbar.style.top = ((currentY = scrollY) < lastY && navbar.getBoundingClientRect().top < 90) ? '0'  : '-90px';
+  
+  document.querySelectorAll('.txtNavbar, #navbar').forEach(el => el.classList.toggle('scrolled', currentY > 90));
+
   lastY = currentY;
 });
 
@@ -48,7 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const langToggle = document.querySelector('.languageToggle');
   const menu = langToggle.querySelector('.languageMenu');
   
-  langToggle.addEventListener('click', e => e.stopPropagation() || menu.classList.toggle('open'));
+  langToggle.addEventListener('click', el => el.stopPropagation() || menu.classList.toggle('open'));
   document.addEventListener('click', () => menu.classList.remove('open'));
   
   menu.querySelectorAll('button').forEach(btn => {

@@ -10,6 +10,8 @@ Although it's clear that frameworks accelerate and assist in the development of 
 
 To enable language switching on the page without reloading or redirecting it, I used `data-i18n` markers on each translatable element in the HTML. This way, upon a click event, the script iterates over language-specific JSON files and replaces the text based on their content.
 
+`<h1 data-i18n="greeting">Olá! Sou Arthur Reis</h1>`
+
 ## Behind the code
 
 After being just a regular website user my whole life, I began closely observing the approaches taken by developers of all kinds. The lack of responsiveness, visual clutter, absence of dark mode... I constantly reflect on the bad experiences I’ve had with websites over the years when building my own. With that in mind, I aim to provide anyone who visits my projects with a slightly above-average experience.
