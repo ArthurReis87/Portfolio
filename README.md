@@ -1,15 +1,15 @@
-## Portfolio 2025
+# Portfolio 2025
 
 Hello! Welcome to my portfolio. Through this, I summarize and showcase my most notable projects using an intuitive and minimalist layout.
 
-# Why not use frameworks?
+## Why not use frameworks?
 
 Although it's clear that frameworks accelerate and assist in the development of any architecture, I believe that using complex abstractions without first understanding the core of a language is an inappropriate shortcut. For this reason—and because this is one of my first projects using HTML, CSS, and JavaScript—I chose not to rely on any external environment. Also, of course, because this is a small repository that doesn’t require highly dense or complex code.
 
-# Internationalization based on JSON files
+## Internationalization based on JSON files
 
 To enable language switching on the page without reloading or redirecting it, I used `data-i18n` markers on each translatable element in the HTML. This way, upon a click event, the script iterates over language-specific JSON files and replaces the text based on their content.
 
-# Behind the code
+## Behind the code
 
 After being just a regular website user my whole life, I began closely observing the approaches taken by developers of all kinds. The lack of responsiveness, visual clutter, absence of dark mode... I constantly reflect on the bad experiences I’ve had with websites over the years when building my own. With that in mind, I aim to provide anyone who visits my projects with a slightly above-average experience.
