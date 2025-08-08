@@ -1,10 +1,10 @@
 # Portfolio 2025
 
-Hello! Welcome to my portfolio. Through this, I summarize and showcase my most notable projects using an intuitive and minimalist layout.
+Hi! Be welcomed to my portfolio. Through this, I summarize and showcase my most notable projects using an intuitive and minimalist layout.
 
 ## Why not use frameworks?
 
-Although it's clear that frameworks accelerate and assist in the development of any architecture, I believe that using complex abstractions without first understanding the core of a language is an inappropriate shortcut. For this reason—and because this is one of my first projects using HTML, CSS, and JavaScript—I chose not to rely on any external environment. Also, of course, because this is a small repository that doesn’t require highly dense or complex code.
+Although it's clear that frameworks accelerate and assist in the development of any architecture, I believe that using complex abstractions without first understanding the core of a language is an inappropriate shortcut. And since this is one of my first experiences using these languages, I chose not to rely on any external environment for this project. Also, of course, because this is a small repository that doesn’t require highly dense or complex code.
 
 ## Internationalization based on JSON files
 
