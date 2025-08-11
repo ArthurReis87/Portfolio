@@ -77,6 +77,7 @@ function createThemeToggle() {
   return toggle;
 }
 
+// Configura internacionalização
 async function loadLanguage(lang) {
   const res = await fetch(`assets/lang/${lang}.json`);
   const data = await res.json();

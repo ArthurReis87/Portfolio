@@ -1,3 +1,5 @@
+<div align="center">
+
 # Portfolio
 
 ![GitHub top language](https://img.shields.io/github/languages/top/aarthurcreis/Portfolio2025)
@@ -7,6 +9,8 @@
 Hi! Be welcomed to my portfolio. Through this, I summarize and showcase my most notable projects using an intuitive and minimalist layout.
 
 ![](assets/img/portfolio.webp)
+
+</div>
 
 ## Why not use frameworks?
 
