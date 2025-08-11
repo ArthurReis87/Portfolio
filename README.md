@@ -14,6 +14,7 @@ Hi! Be welcomed to my portfolio. Through this, I summarize and showcase my most 
 
 ![Portfolio Image](assets/img/portfolio.webp)
 
+---
 
 ## Why not use frameworks?
 
