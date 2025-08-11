@@ -8,9 +8,12 @@
 
 Hi! Be welcomed to my portfolio. Through this, I summarize and showcase my most notable projects using an intuitive and minimalist layout.
 
-![](assets/img/portfolio.webp)
-
 </div>
+
+---
+
+![Portfolio Image](assets/img/portfolio.webp)
+
 
 ## Why not use frameworks?
 
