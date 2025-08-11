@@ -1,6 +1,12 @@
-# Portfolio 2025
+# Portfolio
+
+![GitHub top language](https://img.shields.io/github/languages/top/aarthurcreis/Portfolio2025)
+![GitHub language count](https://img.shields.io/github/languages/count/aarthurcreis/Portfolio2025)
+![GitHub repo size](https://img.shields.io/github/repo-size/aarthurcreis/Portfolio2025)
 
 Hi! Be welcomed to my portfolio. Through this, I summarize and showcase my most notable projects using an intuitive and minimalist layout.
+
+![](assets/img/portfolio.webp)
 
 ## Why not use frameworks?
 

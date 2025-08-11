@@ -2,9 +2,9 @@
   "greeting": "Hello! I'm Arthur Reis",
   "subtitle": "Student & developer",
   "projects": "Projects",
-  "about": "Arthur Lorem ipsum dolor sit amet consectetur, adipisicing elit amet consectetur adipisicing elit. Totam ut quo ea nemo, consequuntur quis nisi eligendi praesentium ratione ullam commodi. Ratione nesciunt, minima repudiandae quisquam consequuntur repellendus.",
-  "tatakonDesc": "Tatakon Lorem ipsum dolor sit amet, consectetur amet consectetur adipisicing elit. Totam ut quo ea nemo, consequuntur quis nisi eligendi praesentium ratione ullam commodi. Ratione nesciunt, minima repudiandae quisquam consequuntur repellendus.",
+  "about": "I am a passionate and curious developer who believes technology should be built with purpose and care. I am always learning, welcoming challenges, and creating projects that reflect dedication and continuous growth.",
+  "tatakonDesc": "Development project of a video game controller inspired by the design of the traditional Japanese drum Taiko no Tatsujin (“Tatakon”), using piezoelectric sensors integrated into a hardware and software system based on Arduino.",
   "portfolio": "Portfolio",
-  "portfolioDesc": "Portfolio Lorem ipsum dolor sit amet consectetur amet consectetur adipisicing elit. Totam ut quo ea nemo, consequuntur quis nisi eligendi praesentium ratione ullam commodi. Ratione nesciunt, minima repudiandae quisquam consequuntur repellendus.",
+  "portfolioDesc": "Portfolio developed using HTML, CSS, and JavaScript throughout the entire application. The project features smooth animations, a responsive design, internationalization (i18n) supporting English and Portuguese languages, and a dark mode for an enhanced user experience.",
   "footer": "© 2025 Arthur Reis — Made with ⚽︎ in Brazil"
 }
