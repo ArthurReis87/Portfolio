@@ -6,8 +6,7 @@
 ![GitHub language count](https://img.shields.io/github/languages/count/aarthurcreis/Portfolio2025)
 ![GitHub repo size](https://img.shields.io/github/repo-size/aarthurcreis/Portfolio2025)
 
-Hi! Be welcomed to my portfolio. Through this, I summarize and showcase my most notable projects using an intuitive and minimalist layout.
-
+Hi! Be welcomed to my portfolio. In these pages, I present a curated selection of my most notable projects, summarizing their purpose and features, all through an intuitive and minimalist layout.
 </div>
 
 ---
